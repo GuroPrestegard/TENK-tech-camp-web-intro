@@ -10,10 +10,9 @@ const { description } = AppConfig;
 
 const allPosts = await Astro.glob('./posts/*.md');
 allPosts.sort(sortPostsByDate);
-const latestPosts = allPosts.slice(0, 3);
 ---
 
 <Base head={{ title, description }}>
 	<Hero />
-	<LatestPosts posts={latestPosts} />
+	<LatestPosts posts={allPosts} />
 </Base>
