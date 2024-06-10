@@ -76,9 +76,78 @@ NB! navn på klasser og Id-er kan ikkje ha mellomrom i seg. bruk ``-`` i staden 
     </ul>
 </article>
 
+---
+
+### Bilder
+Her ser du eit bilete av ein hund, som eigentleg er firkanta. Men, ved hjelp av CSS har det blitt rundt. Dette fungerar 
+best med bileter som er heilt kvadratiske. 
+<div>
+<img class="rounded"  src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
+</div>
+
+```html
+<img src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
+```
+<article class="oppgave">
+    <h4 id="oppgave-2">Oppgave 2</h4>
+    <p><em>Lag ei side med eit bilde</em></p>
+    <ul>
+      <li>Gi biletet runde kantar ved å bruke "border-radius" </li>
+    </ul>
+</article>
 
 ---
 
+Her har me tatt bildet frå i stad, og gjort det svart-kvitt. 
+<div>
+<img class="rounded grayscale"  src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
+</div>
 
+<article class="oppgave">
+    <h4 id="oppgave-3">Oppgave 3</h4>
+    <p><em>Lag ei side med eit bilde</em></p>
+    <ul>
+      <li>Gjer biletet svart-kvitt ved å bruke "filter"</li>
+    </ul>
+</article>
+
+
+---
+
+Her har me tatt bildet frå i stad, og gjort det opp-ned.
+<div>
+<img class="rounded grayscale updown"  src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
+</div>
+
+<article class="oppgave">
+    <h4 id="oppgave-4">Oppgave 4</h4>
+    <p><em>Lag ei side med eit bilde</em></p>
+    <ul>
+      <li>Gjer biletet opp-ned ved å bruke "rotate"</li>
+    </ul>
+</article>
+
+---
+
+Her har me tatt bildet frå i stad, og skrive CSS som gjer at det snurra rundt når du held musa over det. For å style når
+nokon held musa over noko, brukar me :hover. For eksempel om nokon held musa over ein p-tag, kan me bruke
+
+```css
+p:hover {
+color: blue;
+}
+```
+<div>
+<img class="rounded grayscale rotate"  src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
+</div>
+
+<article class="oppgave">
+    <h4 id="oppgave-5">Oppgave 5 (Vanskelig! det er lov å hoppe over)</h4>
+    <p><em>Lag ei side med eit bilde</em></p>
+    <ul>
+      <li>Få biletet til å snurre!</li>
+      <li>Bruk "transition", "transform" og selectoren :hover</li>
+    </ul>
+</article>
 
 [Gå til neste del: javaScript](05_javascript)

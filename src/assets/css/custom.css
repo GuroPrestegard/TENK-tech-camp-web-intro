@@ -14,3 +14,21 @@ article.oppgave {
   background: #EA580C;
   color: white;
 }
+
+img.rounded {
+  border-radius: 50%;
+}
+
+img.grayscale {
+  filter: grayscale(100%);
+}
+
+img.updown {
+  rotate: 180deg;
+}
+img.rotate {
+  transition: transform .7s ease-in-out;
+}
+img.rotate:hover {
+  transform: rotate(360deg);
+}

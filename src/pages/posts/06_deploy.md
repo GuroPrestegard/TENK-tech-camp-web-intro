@@ -121,7 +121,7 @@ css-fil som inneheld stylinga di. Me prøvar oss på ein <code class="language-p
 <img src="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_3x2.jpg" 
      alt="ein hund" 
      width="500" 
-     height="450">
+     height="350">
 
 </body>
 </html>
