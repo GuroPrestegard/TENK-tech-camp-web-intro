@@ -12,13 +12,14 @@ tags: [ "nivå2" ]
 
 ### Innhald
 
-- [Kva er HTML](#kva-er-html)
-- [Elementer](#elementer)
-- [Tags](#tags)
 - [Oppgave 1](#oppgave-1)
 - [Oppgave 2](#oppgave-2)
 - [Oppgave 3](#oppgave-3)
 - [Oppgave 4](#oppgave-4)
+- [Oppgave 5](#oppgave-5)
+- [Oppgave 6](#oppgave-6)
+- [Oppgave 7](#oppgave-7)
+
 
 ## Kva er HTML?
 
@@ -84,31 +85,303 @@ Vi kan også ha nummererte lister, dersom rekkefølgen er viktig, med `<ol>`- og
 ```
 
 
----
+#### Tabeller 
 
-<article class="oppgave">
-    <h4 id="oppgave-2">Oppgave 2</h4>
-    <p><em>Lag ei liste med innhald</em></p>
-    <ul>
-        <li>Klarar du å laga underelementer på elementa i listene? </li>
-    </ul>
+Tabeller er ofte nyttige for å "strukturere" og presentere innholdet, spesielt om man har data som kan representeres med rader og kolonner.
 
+De er litt mer finurlige, men defineres slik:
 
-</article>
+```html
+<!-- table-taggen definerer at her starter tabellen vår -->
+<table>
+  <!-- thead-taggen forteller oss at dette skal være headeren på tabellen -->
+  <thead>
+    <!-- tr-taggen forteller at dette skal være en rad i tabellen -->
+    <tr>
+      <!-- th-taggen representerer en kolonne i tabellen -->
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <!-- tbody-taggen forteller oss at dette skal være selve innholdet i tabellen -->
+  <tbody>
+    <!-- første rad -->
+    <tr>
+      <!-- td-taggen representerer en enkel celle i tabellen -->
+      <!-- merk at det bør være like mange td-elementer som vi hadde th-tagger i headeren -->
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- andre rad -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- osv osv -->
+  </tbody>
+</table>
+```
+
+Et eksempel med litt innhold:
+
+```html
+<table border="1">
+  <thead>
+    <tr>
+      <th>Film</th>
+      <th>År</th>
+      <th>Regissør</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Star Wars</td>
+      <td>1977</td>
+      <td>George Lucas</td>
+    </tr>
+    <tr>
+      <td>Jurassic Park</td>
+      <td>1993</td>
+      <td>Steven Spielberg</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+Dette blir fort veldig avansert, så det er viktig at man bruker indentering, for å gjøre det så lett-leselig som mulig.
+
+Merk denne `border="1"`-greia vi la til - dette er en attributt, som vi skal snakke litt nærmere om seinere i workshopen,
+vi legger den til her for å gjøre tabellen vår litt mer synlig.
 
 ---
 
 <article class="oppgave">
     <h4 id="oppgave-3">Oppgave 3</h4>
+    <p><em>Legg til en enkel tabell på nettsiden din</em></p>
+    <ul>
+      <li>Vær obs på strukturen! Det er et samspill mellom <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;thead</code>, <code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code>, og <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> - så det kan lett gå i surr, og det er viktig at man lukker de riktig.</li>
+    </ul>
 </article>
+
+---
+
+#### Input 
+
+Nettsider lar oss gjerne gjøre litt mer enn å bare se på innhold, for eksempel kan man legge til en kommentar, eller logge inn.
+Da finnes det litt mer avanserte elementer vi kan benytte for å la brukeren gjøre slike handlinger.
+
+Litt senere, når vi kommer til JavaScript-delen, skal vi se på hvordan vi kan bruke disse elementene til å gi oppførsel til siden vår.
+
+Ofte ønsker man at de som bruker nettsiden skal kunne legge inn noe tekst, for eksempel om de skal logge inn med brukernavn og passord,
+eller legge til en kommentar.
+
+`<input>`-elementet gir oss en enkel tekstboks som brukeren kan skrive i.
+Merk at dette også er et sånt spesielt element, som man ikke trenger å lukke.
+
+```html
+<div>
+  Brukernavn:
+  <input />
+  Passord:
+  <input />
+</div>
+```
+
+Dersom man ønsker at bruker skal kunne skrive litt lengre tekster med linjeskift, for eksempel en kommentar på en post, kan man
+bruke `<textarea>`-elementet:
+
+```html
+<div>
+  Kommentar:
+  <textarea> </textarea>
+  <!-- merk at denne må man lukke -->
+</div>
+```
+
+Vi kan bruke `<button>`-elementet for å lage knapper på nettsiden vår:
+
+```html
+<div>
+  Kommentar:
+  <textarea> </textarea>
+  <button>Legg til kommentar</button>
+</div>
+```
 
 ---
 
 <article class="oppgave">
     <h4 id="oppgave-4">Oppgave 4</h4>
+    <p><em>Legg til noen tekstfelt og knapper til nettsiden din</em></p>
+    <ul>
+      <li>Vi kommer seinere til å gå inn på hvordan vi kan få disse til å både se litt bedre ut, og ha faktisk oppførsel, i CSS- og JavaScript-delene</li>
+    </ul>
 </article>
 
+---
 
+### Attributter 
+
+Et veldig viktig konsept som vi må være innom, og som blir veldig relevant for CSS- og JavaScript-delene,
+er dette med attributter på HTML-elementene våre.
+
+Attributter er ekstra konfigurering og informasjon vi kan gi til elementene våre, for å spisse de litt mer.
+
+Dette er noe man legger til inne i selve taggen, og er separat fra innholdet:
+
+```html
+<div id="div-1-id">Innhold</div>
+```
+
+Merk at man ikke trenger å legge de til i lukke-taggen, og det er viktig at man starter og slutter attributten med `"`.
+
+`<input>`-elementet er et eksempel på en tag som kan endres ganske mye basert på hvilke attributter vi gir den.
+
+Vi kan bruke `type="checkbox"` for å lage en checkbox der man kan velge ja / nei:
+
+```html
+<div>
+  <h3>Velg topping til pizza:</h3>
+  <input type="checkbox" /> Ost <br />
+  <input type="checkbox" /> Tomatsaus <br />
+  <input type="checkbox" /> Pepperoni <br />
+  <input type="checkbox" /> Løk <br />
+  <input type="checkbox" /> Ananas <br />
+</div>
+```
+
+Vi kan bruke `type="number"` for å gjøre det om til et tekstfelt man bare kan legge til tall i:
+
+```html
+<div>
+  <label>Antall pizzaer å bestille:</label> <br />
+  <input type="number" />
+</div>
+```
+
+Som default får `<input>`-elementet verdien `type="text"`, men man kan ha flere attributter samtidig,
+for eksempel om vi ønsker å begrense hvor mange tegn brukeren skal kunne skrive inn, og også ha en placeholder tekst:
+
+```html
+<div>
+  <label>Brukernavn:</label> <br />
+  <input type="text" maxlength="20" placeholder="Angi brukernavn..." />
+
+  <br />
+  <!-- merk at det er lov ha attributter over flere linjer, som kan gjøre det lettere å lese: -->
+  <label>Passord:</label> <br />
+  <input
+    type="password"
+    minlength="8"
+    maxlength="50"
+    placeholder="Angi passord..."
+  />
+</div>
+```
+
+---
+
+<article class="oppgave">
+    <h4 id="oppgave-5">Oppgave 5</h4>
+    <p><em>Bruk attributter for å legge til noen mer avanserte <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>-elementer på nettsiden din</em></p>
+    <ul>
+      <li>Det finnes mange gyldige <code class="language-plaintext highlighter-rouge">type</code>-attributter for <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> som f.eks <code class="language-plaintext highlighter-rouge">color</code>, <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">search</code>, <code class="language-plaintext highlighter-rouge">radio</code>, <code class="language-plaintext highlighter-rouge">file</code> - Eksperimenter gjerne med disse, og legg merke til hvor mye form og funksjon blir påvirket av å endre dette attributtet</li>
+    </ul>
+</article>
+
+---
+
+<br/>
+
+Attributter er svært viktige for lenker, for eksempel, da det er der vi angir hvilken adresse lenken skal peke på.
+Lenker defineres med `<a>`-taggen i HTML, og må ta en `href`-attributt.
+
+```html
+<div>
+  <a href="https://www.nrk.no/">NRK.no</a>
+  <br />
+  <!-- Denne magiske target-attributten vil automatisk åpne lenken i en ny fane i nettleseren -->
+  <a href="https://www.google.com/" target="_blank">Google</a>
+</div>
+```
+
+Nettsider består gjerne også av mange forskjellige lenker, som peker på forskjellige sider inne på den samme nettsiden,
+eller til sider som finnes på helt andre adresser, andre steder på nett.
+I denne workshopen skal vi bare fokusere på én enkel nettside, uten lenker til andre sider av samme nettside.
+
+---
+
+<article class="oppgave">
+    <h4 id="oppgave-6">Oppgave 6</h4>
+    <p><em>Legg til noen lenker til forskjellige nettsider inne på siden din</em></p>
+    <ul>
+      <li>Merk at på CodePen får man ofte ikke åpne disse sidene, med mindre man åpner de i en ny fane</li>
+    </ul>
+</article>
+
+---
+
+<br/>
+Et annet element som er veldig avhengig av attributter, er `<img>`-taggen, som lar oss legge til bilder på nettsiden.
+
+Denne taggen har en `src`-attributt, hvor vi legger stien / adressen til bildet.
+
+```html
+<div>
+  Et tilfeldig bilde
+  <br />
+  <img src="https://picsum.photos/200" />
+</div>
+```
+
+Merk at det er ikke alltid man får lov til å vise slike bilder direkte fra en annen side, da de som eier den andre nettsiden
+har mulighet for å stenge for dette.
+Det går an å vise til et bilde som ligger sammen med HTML-filen:
+
+```html
+<div>
+  Et utvalgt bilde
+  <br />
+  <img src="bildet-mitt.jpg" />
+</div>
+```
+
+Dette forutsetter at i samme mappe (lokalt på din maskin), så ligger det en bilde-fil (.jpg, .png, etc) ved siden av HTML-filen.
+
+---
+
+<article class="oppgave">
+    <h4 id="oppgave-7">Oppgave 7</h4>
+    <p><em>Legg til et bilde på nettsiden din</em></p>
+    <ul>
+      <li>Du kan finne et bilde på nett, og enten legge til adressen direkte til bildet - men det er ikke alltid man får lov</li>
+      <li>Kan også laste ned et bilde lokalt, og vise til stien direkte (men forutsetter at man ikke bruker CodePen)</li>
+      <li>Det finnes noen sider som lar deg hente slikte bilder gratis: <a href="https://picsum.photos">https://picsum.photos</a>, <a href="https://placekitten.com/">https://placekitten.com/</a></li>
+    </ul>
+</article>
+
+---
+
+### Oppsummering 
+
+- HTML-sider har en struktur, som består av tagger og tekst
+- Disse taggene angir hvilket type innhold og hvilken struktur siden skal ha
+- Det finnes et mangfold av ulike typer elementer
+- Man kan bruke attributter på elementene for å gi de litt mer avansert funksjonalitet
+
+### Videre
+
+Det finnes veldig mye mer man kan gjøre i ren HTML, og veldig mange andre elementer og attributter vi ikke har snakket om.
+
+Her er liste over alle de forskjellige elementene som er definert i HTML-standarden:
+[HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+Det finnes veldig mye der ute som man kan utforske, og en moderne nettside kan være veldig avansert!
 
 
 
