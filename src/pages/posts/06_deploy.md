@@ -41,6 +41,7 @@ Det fyrste ein må gjere, er å lage ein GitHub-konto. Til det treng du ei e-pos
 - Gi fila navnet index.html
 - Skriv inn HTML-koden din (eller bruk eksempelet under)
 - Klikk på "Commit changes..."
+- Klikk "Commit changes" når du får ein popup (du treng ikkje endre noko)
 ```html
 <!DOCTYPE html>
 <html>
@@ -54,7 +55,6 @@ Det fyrste ein må gjere, er å lage ein GitHub-konto. Til det treng du ei e-pos
 </body>
 </html>
 ```
-- Klikk "Commit changes" når du får ein popup (du treng ikkje endre noko)
 
 ## Sett opp deployment
 - Gå til Settings
@@ -67,15 +67,17 @@ Det fyrste ein må gjere, er å lage ein GitHub-konto. Til det treng du ei e-pos
 - Du kan òg gå tilbake til "code"-tabben, og klikke på linken under "deployments" ute til høgre. Klikk på linken du finn der. 
 
 ## Legg til CSS 💅
-Det finst to måtar å legge til CSS i ei HTML-fil. Enten, kan du bruke <style></style> tags, eller du kan linke til ei
-css-fil som inneheld stylinga di. Me prøvar oss på ein <style>-tag her. 
+Det finst to måtar å legge til CSS i ei HTML-fil. Enten, kan du bruke <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> tags, eller du kan linke til ei
+css-fil som inneheld stylinga di. Me prøvar oss på ein <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code>-tag her. 
 
 - opne index.html fila i github. 
 - trykk på blyanten i høgre hjørne. 
-- inne i <head></head>-taggen, legg du til ein <style></style> taggen. 
+- inne i  <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>-taggen, legg du til ein <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> tag. 
 - Her legg du til stylinga du vil ha. F.eks slik som i eksempelet under
 - Trykk på "commit changes..."
 - Klikk "Commit changes" når du får ein popup (du treng ikkje endre noko)
+- Vent til sida di er ferdig med å deploye (du kan sjekke status til høgre i code-tabben)
+- Sjekk resultat!
 
 ```html
 <!DOCTYPE html>
@@ -91,6 +93,35 @@ css-fil som inneheld stylinga di. Me prøvar oss på ein <style>-tag her.
 <body>
 
 <h1>Velkommen til nettsida mi!✨</h1>
+
+</body>
+</html>
+```
+
+## Legg til ei ny side
+- Opprett ei ny fil ved å trykke på pluss-tegnet til høgre når du står på "code"-tabben. Kall fila noko som passar med det innhaldet du vil vise (og slutt med .html). Eg kalla mi fil dogs.html.
+- Legg til innhald på sida, f.eks ei side om hundar som i eksempelet under.
+- Commit changes som me har gjort tidlegare. 
+- Opne index.html, og trykk på blyanten. 
+- Legg til ei lenke til den nye sida du laga. Sidan eg kalla mi fil dogs.html, blir lenka ```<a href="./dogs.html">Gå til hundar</a>```
+- Commit changes som me har gjort tidlegare. 
+- Vent til nettsida har deploya på nytt, og sjekk resultatet. 
+- P.S pass på å referere til fila på rett måte. Dersom filene er i samme mappe, bruk ./ før filnamnet. Dersom fila er i ei mappe over, bruk ../ før filnamnet. Dersom fila er i ei mappe under, som f.eks heiter pages, bruk ./pages/ før filnamnet. 
+
+
+```html title="dogs.html"
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hundar</title>
+</head>
+<body>
+
+<h1>Her finn du eit bilde av ein hund</h1>
+<img src="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_3x2.jpg" 
+     alt="ein hund" 
+     width="500" 
+     height="450">
 
 </body>
 </html>
