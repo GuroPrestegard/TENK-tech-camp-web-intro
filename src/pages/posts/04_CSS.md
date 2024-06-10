@@ -3,7 +3,7 @@ layout: ../../layouts/post.astro
 title: "CSS"
 description: "CSS"
 author: "gurop"
-excerpt: CSS 
+excerpt: CSS er korleis innhaldet på nettsida skal sjå ut. Om ein tekst er oransje, fet eller kursiv, eller om bakgrunnen på nettsida er kvit eller svart, alt det kan styrast av CSS. 
 image:
   src:
   alt:

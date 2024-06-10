@@ -3,7 +3,7 @@ layout: ../../layouts/post.astro
 title: "Deploy"
 description: "Deploy"
 author: "gurop"
-excerpt: Deploy 
+excerpt: No har me lært å lage ein nettside. Men korleis skal me få gjort det slik at andre òg får sjå den? Det gjer me ved å “deploye” nettsida. 
 image:
   src:
   alt:
@@ -64,4 +64,34 @@ Det fyrste ein må gjere, er å lage ein GitHub-konto. Til det treng du ei e-pos
 ## Sjekk ut di nye nettside! 🚀
 - Øverst skal det no stå: Your site is live at...
 - Klikk på lenka, eller "visit site"
-- Du kan òg gå tilbake til "code"-tabben, og klikke på linken under "deployments" ute til høgre. 
+- Du kan òg gå tilbake til "code"-tabben, og klikke på linken under "deployments" ute til høgre. Klikk på linken du finn der. 
+
+## Legg til CSS 💅
+Det finst to måtar å legge til CSS i ei HTML-fil. Enten, kan du bruke <style></style> tags, eller du kan linke til ei
+css-fil som inneheld stylinga di. Me prøvar oss på ein <style>-tag her. 
+
+- opne index.html fila i github. 
+- trykk på blyanten i høgre hjørne. 
+- inne i <head></head>-taggen, legg du til ein <style></style> taggen. 
+- Her legg du til stylinga du vil ha. F.eks slik som i eksempelet under
+- Trykk på "commit changes..."
+- Klikk "Commit changes" når du får ein popup (du treng ikkje endre noko)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nettsida mi</title>
+  <style>
+    h1 {
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Velkommen til nettsida mi!✨</h1>
+
+</body>
+</html>
+```

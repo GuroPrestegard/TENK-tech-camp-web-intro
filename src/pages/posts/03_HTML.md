@@ -3,7 +3,7 @@ layout: ../../layouts/post.astro
 title: "HTML"
 description: "HTML"
 author: "gurop"
-excerpt: HTML
+excerpt: HTML er ein måte å strukturere tekst og anna innhald på, ved å plassere dei ulike elementa på nettsida i ulike boksar.  
 image:
   src:
   alt:
