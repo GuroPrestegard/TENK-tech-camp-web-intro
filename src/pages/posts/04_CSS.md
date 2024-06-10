@@ -76,4 +76,9 @@ NB! navn på klasser og Id-er kan ikkje ha mellomrom i seg. bruk ``-`` i staden 
     </ul>
 </article>
 
+
 ---
+
+
+
+[Gå til neste del: javaScript](05_javascript)

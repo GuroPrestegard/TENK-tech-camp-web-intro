@@ -21,3 +21,5 @@ ved hjelp av javascript, samle inn all dataen du har skrive, sjekke at den ser r
 at telefonnummer kun er tall), og sende den til backenden slik at dataen kan lagrast og brukaren din vert oppretta.
 
 Me går nærmare inn på javascript seinare. 
+
+[Gå til neste del: deploy](06_deploy)
