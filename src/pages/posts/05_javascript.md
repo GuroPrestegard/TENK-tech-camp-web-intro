@@ -22,4 +22,4 @@ at telefonnummer kun er tall), og sende den til backenden slik at dataen kan lag
 
 Me går nærmare inn på javascript seinare. 
 
-[Gå til neste del: deploy](06_deploy)
+[Gå til neste del: Deploy](06_deploy)

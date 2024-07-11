@@ -18,7 +18,6 @@ tags: [ "nivå2" ]
 - [Oppgave 4](#oppgave-4)
 - [Oppgave 5](#oppgave-5)
 - [Oppgave 6](#oppgave-6)
-- [Oppgave 7](#oppgave-7)
 
 
 ## Kva er HTML?
@@ -28,6 +27,9 @@ deler den opp med avsnitt for å markere at det er forskjell i innhaldet i tekst
 ein med <font color="#EA580C">tags</font>.
 
 Dette er ein <font color="#EA580C">paragraph</font>-tag. Paragraph betyr avsnitt.
+
+Kvar tag må opnast og sluttast. Til dømes, ein paragraph tag `p` blir opna med `<p>`
+og blir slutta med `</p>`. Teksten mellom dei to tags er ein del av avsnittet.
 
 ```html
 <p>Dette er eit avsnitt</p> 
@@ -161,7 +163,7 @@ vi legger den til her for å gjøre tabellen vår litt mer synlig.
 ---
 
 <article class="oppgave">
-    <h4 id="oppgave-3">Oppgave 3</h4>
+    <h4 id="oppgave-2">Oppgave 2</h4>
     <p><em>Legg til en enkel tabell på nettsiden din</em></p>
     <ul>
       <li>Vær obs på strukturen! Det er et samspill mellom <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;thead</code>, <code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code>, og <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> - så det kan lett gå i surr, og det er viktig at man lukker de riktig.</li>
@@ -181,7 +183,7 @@ Ofte ønsker man at de som bruker nettsiden skal kunne legge inn noe tekst, for 
 eller legge til en kommentar.
 
 `<input>`-elementet gir oss en enkel tekstboks som brukeren kan skrive i.
-Merk at dette også er et sånt spesielt element, som man ikke trenger å lukke.
+Merk at dette også er et sånt spesielt element, som opnast og lukkast i samme tag.
 
 ```html
 <div>
@@ -216,7 +218,7 @@ Vi kan bruke `<button>`-elementet for å lage knapper på nettsiden vår:
 ---
 
 <article class="oppgave">
-    <h4 id="oppgave-4">Oppgave 4</h4>
+    <h4 id="oppgave-3">Oppgave 3</h4>
     <p><em>Legg til noen tekstfelt og knapper til nettsiden din</em></p>
     <ul>
       <li>Vi kommer seinere til å gå inn på hvordan vi kan få disse til å både se litt bedre ut, og ha faktisk oppførsel, i CSS- og JavaScript-delene</li>
@@ -287,7 +289,7 @@ for eksempel om vi ønsker å begrense hvor mange tegn brukeren skal kunne skriv
 ---
 
 <article class="oppgave">
-    <h4 id="oppgave-5">Oppgave 5</h4>
+    <h4 id="oppgave-4">Oppgave 4</h4>
     <p><em>Bruk attributter for å legge til noen mer avanserte <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>-elementer på nettsiden din</em></p>
     <ul>
       <li>Det finnes mange gyldige <code class="language-plaintext highlighter-rouge">type</code>-attributter for <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> som f.eks <code class="language-plaintext highlighter-rouge">color</code>, <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">search</code>, <code class="language-plaintext highlighter-rouge">radio</code>, <code class="language-plaintext highlighter-rouge">file</code> - Eksperimenter gjerne med disse, og legg merke til hvor mye form og funksjon blir påvirket av å endre dette attributtet</li>
@@ -317,7 +319,7 @@ I denne workshopen skal vi bare fokusere på én enkel nettside, uten lenker til
 ---
 
 <article class="oppgave">
-    <h4 id="oppgave-6">Oppgave 6</h4>
+    <h4 id="oppgave-5">Oppgave 5</h4>
     <p><em>Legg til noen lenker til forskjellige nettsider inne på siden din</em></p>
     <ul>
       <li>Merk at på CodePen får man ofte ikke åpne disse sidene, med mindre man åpner de i en ny fane</li>
@@ -327,6 +329,7 @@ I denne workshopen skal vi bare fokusere på én enkel nettside, uten lenker til
 ---
 
 <br/>
+
 Et annet element som er veldig avhengig av attributter, er `<img>`-taggen, som lar oss legge til bilder på nettsiden.
 
 Denne taggen har en `src`-attributt, hvor vi legger stien / adressen til bildet.
@@ -356,7 +359,7 @@ Dette forutsetter at i samme mappe (lokalt på din maskin), så ligger det en bi
 ---
 
 <article class="oppgave">
-    <h4 id="oppgave-7">Oppgave 7</h4>
+    <h4 id="oppgave-6">Oppgave 6</h4>
     <p><em>Legg til et bilde på nettsiden din</em></p>
     <ul>
       <li>Du kan finne et bilde på nett, og enten legge til adressen direkte til bildet - men det er ikke alltid man får lov</li>
@@ -383,7 +386,9 @@ Her er liste over alle de forskjellige elementene som er definert i HTML-standar
 
 Det finnes veldig mye der ute som man kan utforske, og en moderne nettside kan være veldig avansert!
 
-
+Tykkjer du det er vanskeleg å hugsa dei riktige tags? Dei fleste taggar har eit logisk namn.
+Til dømes står `ul` for uordna liste, medan `ol` er ein ordna (nummerert) liste.
+Kvart element i lista er eit listeelement (list item; `li`).
 
 
 [Gå til neste del: CSS](04_CSS)
