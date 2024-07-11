@@ -29,7 +29,7 @@ const options = {
 
 // https://astro.build/config
 export default defineConfig({
-        site: 'https://guroprestegard.github.io',
+	site: 'https://guroprestegard.github.io/TENK-tech-camp-web-intro',
 	base: 'TENK-tech-camp-web-intro',
 	markdown: {
 		syntaxHighlight: false,
