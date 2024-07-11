@@ -1,5 +1,4 @@
 ---
-import { formatDate } from '@/utils/data.util';
 import Section from './Section.astro';
 import Tags from './Tags.astro';
 
@@ -15,9 +14,8 @@ interface Props {
 	};
 }
 
-const { title, pubDate, tags, minutesRead, img } = Astro.props;
+const { title, tags,  img } = Astro.props;
 
-const formattedDate = formatDate(pubDate);
 ---
 
 <Section>
