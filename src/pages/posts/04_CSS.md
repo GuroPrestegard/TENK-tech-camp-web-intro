@@ -60,12 +60,12 @@ Id-er settes på html-tags ved å skrive ``id="et-superbra-id-navn"``. Ein ID h�
 <p id="et-superbra-id-navn">Dette er eit avsnitt</p>
 ```
 ```css
-.et-superbra-id-navn {
+#et-superbra-id-navn {
    font-weight: bold 
 }
 ```
 
-NB! navn på klasser og Id-er kan ikkje ha mellomrom i seg. bruk ``-`` i staden for. 
+NB! navn på klasser og Id-er kan ikkje ha mellomrom i seg. Bruk ``-`` i staden for. 
 
 
 <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="OJYgJGM" data-pen-title="HTMLCSS" data-user="gurop" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -230,8 +230,8 @@ Alle elementa har fått ein klasse, i tillegg har kvart av underelementa fått s
     <ul>
       <li>Endre mellomrommet (gap) mellom boksane</li>
       <li>Bruk justify-content på container-elementet til å senterere boksene </li>
-      <li>bruk flex-direction på container-elementet for å endre boksene til å sorteres nedover </li>
-      <li>bruk align-items på container-elementet til å sentrere boksene </li>
+      <li>Bruk flex-direction på container-elementet for å endre boksene til å sorteres nedover </li>
+      <li>Bruk align-items på container-elementet til å sentrere boksene </li>
     </ul>
 </article>
 
@@ -264,12 +264,9 @@ du kan gi til justify-content og align-items.
 <article class="oppgave">
     <h4 id="oppgave-9">Oppgave 9</h4>
     <p><em>Prøv å gi ein layout til ei nettside med overskrift, bilder og forskjellige element. </em></p>
-    <ul>
-      <li></li>
-    </ul>
 </article>
 
 
 
 
-[Gå til neste del: javaScript](05_javascript)
+[Gå til neste del: JavaScript](05_javascript)
