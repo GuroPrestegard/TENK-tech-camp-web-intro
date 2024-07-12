@@ -269,4 +269,4 @@ du kan gi til justify-content og align-items.
 
 
 
-[Gå til neste del: JavaScript](05_javascript)
+[Gå til neste del: JavaScript](/TENK-tech-camp-web-intro/posts/05_javascript)

@@ -22,7 +22,7 @@ at telefonnummer kun er tall), og sende den til backenden slik at dataen kan lag
 
 Me går nærmare inn på javascript seinare. 
 
-[Gå til neste del: Deploy](06_deploy)
+
 
 
 ### Del 1 - Javascript grunnlegende konspemter
@@ -64,3 +64,5 @@ Vi ser på lister og forløkker, og knapper som kaller på flere funksjoner.
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+[Gå til neste del: Deploy](/TENK-tech-camp-web-intro/posts/06_deploy)
