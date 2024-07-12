@@ -30,7 +30,7 @@ const options = {
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://guroprestegard.github.io',
-	base: '.',
+//	base: 'TENK-tech-camp-web-intro',
 	markdown: {
 		syntaxHighlight: false,
 		// Disable syntax built-in syntax hightlighting from astro

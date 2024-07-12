@@ -67,4 +67,4 @@ I denne workshopen så anbefaler vi å bruke disse verktøyene som finnes på ne
 - NetBeans
 - Atom
 
-[Gå til neste del: HTML](./../03_HTML)
+[Gå til neste del: HTML](/TENK-tech-camp-web-intro/posts/03_HTML)
