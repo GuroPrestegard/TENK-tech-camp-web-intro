@@ -33,11 +33,11 @@ Det fyrste ein må gjere, er å lage ein GitHub-konto. Til det treng du ei e-pos
   - For gratis konto må repository vera public for å kunne publiserast som GitHub pages. Dette betyr at alt du legg til i dette repositoriet er tilgjengelig for alle. 
 - Trykk "Create repository"
 
-![alt text](/TENK-tech-camp-web-intro/public/assets/images/createrepo.png "Create repos")
+![alt text](/TENK-tech-camp-web-intro/assets/images/createrepo.png "Create repos")
 
 ## Legg til koden din 
 - Etter at du har laga eit repository, klikk "creating a new file"-linken
-![alt text](/TENK-tech-camp-web-intro/public/assets/images/createFile.png "Create file")
+![alt text](/TENK-tech-camp-web-intro/assets/images/createFile.png "Create file")
 - Gi fila navnet index.html
 - Skriv inn HTML-koden din (eller bruk eksempelet under)
 - Klikk på "Commit changes..."
