@@ -391,4 +391,4 @@ Til dømes står `ul` for uordna liste, medan `ol` er ein ordna (nummerert) list
 Kvart element i lista er eit listeelement (list item; `li`).
 
 
-[Gå til neste del: CSS](04_CSS)
+[Gå til neste del: CSS](/posts/04_CSS)
