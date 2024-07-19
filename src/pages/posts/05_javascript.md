@@ -41,16 +41,47 @@ Me går nærmare inn på javascript seinare.
 
 
 ### Del 1 - Javascript grunnlegende konspemter
-Her skal jeg forkalere
-- variabler
-Erklære en variabel, endre en variabel, bruke en variabel
 
-- if og else
-- boolean
-- lister
-- for
-og sånne ting
+#### Variabler
+```js
+// teststrenger
+var rund_ting_1 = "klokke"
+var rund_ting_2 = "cd"
 
+// tall
+var radius = 5
+var pi = 3.1415
+
+// utrykk
+var omkrets = 2 * pi * radius
+
+// oppdatere variabler
+var antall_runde_ting = 2
+antall_runde_ting = antall_runde_ting * 3
+
+// boolske verdier true/false
+var har_kanter  = false
+```
+
+#### if så else, og boolske verdier
+```js
+var klokkeslett = 15
+
+if (klokkeslett < 18){
+  console.log("God dag")
+} else {
+  console.log("God kveld")
+}
+
+
+if (klokkeslett < 10){
+  console.log("God morgen")
+} else if (klokkeslett < 18) {
+  console.log("God dag")
+} else {
+  console.log("God kveld")
+}
+```
 
 ---
 
