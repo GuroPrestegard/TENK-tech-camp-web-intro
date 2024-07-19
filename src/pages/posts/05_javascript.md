@@ -16,6 +16,15 @@ tags: ["nivå4"]
 - [Oppgave 1](#oppgave-1)
 - [Oppgave 2](#oppgave-2)
 - [Oppgave 3](#oppgave-3)
+- [Oppgave 4](#oppgave-4)
+- [Oppgave 5](#oppgave-5)
+- [Oppgave 6](#oppgave-6)
+- [Oppgave 7](#oppgave-7)
+- [Oppgave 8](#oppgave-8)
+- [Oppgave 9](#oppgave-9)
+- [Oppgave 10](#oppgave-10)
+- [Oppgave 11](#oppgave-11)
+- [Oppgave 12](#oppgave-12)
 
 ## Kva er JavaScript?
 
@@ -47,24 +56,13 @@ og sånne ting
 
 <article class="oppgave">
     <h4 id="oppgave-1">Oppgave 1</h4>
-    <p><em>Erklær to variabler en for navn og en for alder</em></p>
+    <p><em>Sette variabler og printe dem i konsollen</em></p>
     <ul>
+      <li>Vi skal starte med å finne konsollen, den kan du åpne med å trykke på `Console` knappen nede i venstre hjørne på codePen</li>
+      <li>I js vinduet skal vi sette noen variabler</li>
       <li>Navn kan være en tekst tekststreng: "Harald"</li>
       <li>Alder kan være et tall: 87</li>
-      <li>Test hva som skjer om du gir samme variabel to forskjellige verdier</li>
-    </ul>
-</article>
-
----
-
-<article class="oppgave">
-    <h4 id="oppgave-2">Oppgave 2</h4>
-    <p><em>Bruk console.log() for å printe verdier i 'Console'</em></p>
-    <ul>
-      <li>For å vise 'Console' trykk på `Console` knappen nede i venstre hjørne på codePen </li>
-      <li>Du kan printe en vilkårlig tekststreng som "Hello World!"</li>
-      <li>En kan også bruke variablene vi har definert over</li>
-      <li>"Mitt navn er " + navn</li>
+      <li>Forcode å se hvilken verdi som ligger i en variabel kan vi bruke console.log(variabelNavn)</li>
       <li>Test hva som skjer om du gir samme variabel to forskjellige verdier</li>
       <li>Du kan også oppdatere en variabel, etter å ha definert alder, prøv feks alder = alder-5</li>
     </ul>
@@ -73,12 +71,26 @@ og sånne ting
 ---
 
 <article class="oppgave">
-    <h4 id="oppgave-3">Oppgave 3</h4>
-    <p><em>Lag en funksjon som tar inn navn og alder som paramter. Inne i funksjonen kan du ha en if else som sjekker om personen er over X år. Vis to forskjellige meldiger basert på om personen er gammel nok eller ikke</em></p>
+    <h4 id="oppgave-2">Oppgave 2</h4>
+    <p><em>Lag to funksjon som printer noe i consollen</em></p>
     <ul>
-      <li>For å definere en funsjon skriver man `function fuknsjonsNavn(paramter1, parameter2)`</li>
-      <li>Man kan så kalle på funskjonen med å skrive funksjonsNavn(argument1, arguemnt2)
+      <li>For å definere en funsjon skriver man `function fuknsjonsNavn(paramter1, parameter2)`, en funksjon trenger ikke å ha parameter da har man abre en tom ()</li>
+      <li>Du kaller på funskjonen med å skrive funksjonsNavn(argument1, arguemnt2)</li>
       <li>Parameter beskriver hva funskjonen skal ta inn, mens argument er den faktiske dataen vi sender inn til funksjonen</li>
+      <li>Lag en funksjon hello(), som printer feks "Hello World! til konsollen"</li>
+      <li>Lag en annen funksjon som tar inn navn og alder som argumenter, og bruk disse i console.log() meldingen</li>
+      <li>Feks. console.log("Hei, " + navn)</li>
+    </ul>
+</article>
+
+---
+
+<article class="oppgave">
+    <h4 id="oppgave-3">Oppgave 3</h4>
+    <p><em>Logikk sjekk inne i funksjonen med paramter</em></p>
+    <ul>
+      <li>Lag en if else som sjekker om personen er over X år.</li>
+      <li>Vis to forskjellige meldiger basert på om personen er gammel nok eller ikke</li>
     </ul>
 </article>
 
@@ -86,77 +98,195 @@ og sånne ting
 
 ### Del 2 - Temperatur kalkulator
 
-Her er en enkel aplikasjon for å kovertere mellom farenheit og celscius.
-Her bruker vi java script de grunnleggende koseptene som if og else, og de å definere variabler og bruke de, samt å lage en funksjon og gi den argumenter.
+Her skal vi lage en enkel aplikasjon for å kovertere mellom farenheit og celscius.
+Her bruker vi de  grunnleggende javascript koseptene som if og else, og de å definere variabler og bruke de, samt å lage en funksjon og gi den argumenter som vi utforsket i oppgace 1-3
 Nye ting som vi skal se på her er hvordan man kan bestemme hva som skjer når man trykker på en knapp.
 Hvordan lese hvilken verdi som er lagret i et inputfelt.
-Og legge oppdatere innholdet i et html element.
+Og oppdatere innholdet i et html element.
 
+
+Her er planen for hvordan vi skal bygge opp kalkulatoren vår, vi skal gå igjennom det steg for steg i oppgavene under
 Her bruker man evenListerner for å følge med på  om en knapp blir trykket på.
-Så bruker vi id en et element for å hente verdien som en lagret i et tekst felt
+Så bruker vi id en et element for å hente verdien som en lagret i et tekst feltet
 Så brukes en funksjon vi har lagd til å regner ut den nye farenheit/celsuius verdien
 Tilslutt henter vi ut et output element, hvor vi legger til resulttatstrenger vår og oppdateren den slik at resultatet dukker opp på siden
 
+---
 
 La oss sette i gang.
 
 Vi ønsker først at noe skal skje når vi trykker på knappene.
-Start med å lage en funksjon som skal bli kalt på når vi trykker på knappen. For nå så kan alt denne funksjonen gjør er å enten consol.logge eller lage en alert på at knappen ble trykket på.
+Start med å lage en funksjon som skal bli kalt på når vi trykker på knappen. For nå så kan alt denne funksjonen gjør er å enten console.logge eller lage en alert på at knappen ble trykket på.
+Du kan også lage en ny funksjon som heter konverter_temperatur(), du kan også bare bytte navn på hello funksjonen fra oppgave 2
 
-Dette er jo to forskjellige knapper så vi ønsker at de skal ha forskjellig oppførsel.
-La oss oppdatere funksjonene slik at de har et paramtert sdom er enhet. I hver av knappene legg til argumentet "C" om vi skal gjøre om til celsceisu og F om vi skal gjøre om til Farenheit.
 
-Oppdater consol.log / alert meldingen og sjekk at knappenen har forskjellig oppførsel med å også printe hva de får som argument.
+<article class="oppgave">
+    <h4 id="oppgave-4">Oppgave 4</h4>
+    <p><em>Registere knappe trykk</em></p>
+    <ul>
+      <li>Her skal vi bruke addEventListener() på knapp-elementet</li>
+      <li>element.addEventListener("click",myFunction());</li>
+      <li>For å hente ut knapp-elementet kan vi bruke getElementById("myButtonId") </li>
+      <li>Bruk konverter_temperatur() i addEventListerner()</li>
+    </ul>
+</article>
 
+ ---
+
+
+Vi har to knapper er jo to forskjellige så vi ønsker at de skal ha forskjellig oppførsel.
+La oss oppdatere funksjonene slik at de har et paramtert som er enhet.
+I hver av knappene legg til argumentet "C" om verdien er celsceisu og F om verdien vi tar inn er Farenheit.
+Siden funksjonen vår nå skal ta inn et paramter må vi endre litt på addEventListener(function(){myFunction(parameter1, paramter2)})
+
+<article class="oppgave">
+    <h4 id="oppgave-5">Oppgave 5</h4>
+    <p><em>Oppdater funksjon til å ta inn argument, oppdater eventListener</em></p>
+    <ul>
+      <li>La funksjonen ha et paramter som er enhet</li>
+      <li>Vi må også oppdatere addEventListener() som vi har på knappene</li>
+      <li>addEventListener(function(){myFunction(parameter1)})</li>
+      <li>Legg til argumentet "C" og "F"</li>
+      <li>Oppdater consol.log / alert meldingen og sjekk at knappenen har forskjellig oppførsel med å også printe hva de får som argument.</li>
+    </ul>
+</article>
+
+ ---
 
 Fra koden som er utgitt så er det et input felt, dette har id="input-field", vi har lyst til å hente verdien som er lagret i dette inputfeltet.
 Vi kan starte med å prøve ting ut i konsollen.
 Med å bruke document.getElementById('input-field') så henter vi ut et html element med denne id om det finnes.
-Siden vi ønsker å finne verdien lagret i dette elementet kan vi bruke .value funksjonen.
+Siden vi ønsker å finne verdien lagret i dette elementet kan vi bruke .value
 Dette gir oss document.getElementById('input-field').value
+
+<article class="oppgave">
+    <h4 id="oppgave-6">Oppgave 6</h4>
+    <p><em>Bruk consollen til å se hvilken verdi som er lagret i input feltet</em></p>
+    <ul>
+      <li>Skriv document.getElementById('input-field'), bytt ut "input-field" er id'en på input-feltet</li>
+      <li>Prøv forskjellige verdier, hva skjer om feltet er tomt, om det har tekst, tall og decimaltall i seg</li>
+    </ul>
+</article>
+
+ ---
+
+
 
 Neste steg er å hente ut denne informasjonen i scriptet vårt.
 Inne i funksjonen lag en variabel hvor vi lagrer denne input verdien
 Om du ønsker å se at riktig verdi ble lagret når vi kjører funksjonen kan du console logge variabelen.
 
+<article class="oppgave">
+    <h4 id="oppgave-7">Oppgave 7</h4>
+    <p><em>Oppdater funksjonen til å hente input felt verdien</em></p>
+    <ul>
+      <li>Lag en variabel hvor vi kan lagre verdien som vi henter fra inputfeltet</li>
+      <li>Sjekk med console.log at vi får tak i verdien når vi kaller på funksjone med å trykke på en av knappene</li>
+    </ul>
+</article>
+
+ ---
+
 Nå har vi vet vi om vi skal gjøre om til cesceius eller farenheit, og vi vet input verdien vår. Det eneste vi trenger å gjøre nå er å utføre riktig konvertering.
 
-Bruk en if/else for å sjekke om argumentet vi fikk til funksjonen er C eller F
-brukt input verdien vår til å regne ut en result vardi som vi lagrer i en resultat variabel.
-for formatering av resultat meldigen vil vi vite den motsatte verdien fra den vi fikk inn. Så om t='C' skal motsatt='F'
+<article class="oppgave">
+    <h4 id="oppgave-8">Oppgave 8</h4>
+    <p><em>La funksjonen sjekke hvilken knapp vi trykket på / gjør 2 forskjellige ting bassert på hva argument funksjoen får</em></p>
+    <ul>
+      <li>Bruk en if/else for å sjekke om argumentet vi fikk til funksjonen er C eller F</li>
+      <li>brukt input verdien vår til å regne ut en result vardi som vi lagrer i en resultat variabel*</li>
+      <li>for formatering av resultat meldigen vil vi vite den motsatte enhets-verdien fra argumentet vi fikk. Så om enhet='C' skal motsatt='F'</li>
+      <li>Lagre denne verdien i en variabel, motsatt-enhet</li>
+    </ul>
+</article>
 
 
-For å regne ut fra celceius to farenheit er funksjonen:
-1.8 * C + 32 hvor C er temperaturen i ceceuis
+\* For å regne ut fra celceius to farenheit er funksjonen:
+`1.8 * C + 32` hvor `C` er temperaturen i ceceuis
 om man skal fra farenheit blir formelen
-(F -32) / 1.8
+`(F -32) / 1.8`
 
-
+ ---
 Nå har vi hva orginal temperaturen vår var input-verdi, og hvilken enhetn den hadde t, vi har også funnet den konverterte temperaturen og den motsatte enheten.
 Vi kan nå lage en formatering tekststreng som vi skal la være vår output-verdi
-output-verdi = output_verdi = input_verdi + " \u00b0" + t + " er det samme som " + resultat + " \u00b0" + motsatt;
-\u00b0 er ascii koden for grade symbolet, man kan også kopiere denne verdien °
 
-Nå har vi lyst til å legge til denne veriden inn i htmlen slik at den dukker opp på siden.
-I htmlen kan man se at vi har et element som heter output, vi kan så bruke
+<article class="oppgave">
+    <h4 id="oppgave-9">Oppgave 9</h4>
+    <p><em>Formater resultatet i en resultat streng og lagre denne verdien i en variabel</em></p>
+    <ul>
+      <li>output_verdi = input_verdi + " \u00b0" + t + " er det samme som " + resultat + " \u00b0" + motsatt</li>
+      <li>\u00b0 er ascii koden for grade symbolet, man kan også kopiere denne verdien °</li>
+      <li>Print output_verdi i consollen med console.log() for å sjekket at det ser riktig ut</li>
+    </ul>
+</article>
+
+ ---
 
 
-document.querySelector('output').innerHTML = output_verdi
-for å oppdatere verdien som er i dette elementer.
+Nå har vi lyst til å legge til denne output-veriden inn i htmlen slik at den dukker opp på siden.
+I htmlen kan man se at vi har et element som heter output, dette er hva vi skal bruke
+
+Her skal vi bruke `querySelector` som er en annen måte å hente ut et html element. Den er litt mer generell enn `getElementById`. Denne kan vi spørre etter type html element og den gir oss den første instansen av dette elementet. Man kan også hente ut elenter passert på andre kriterier men her bruker vi element type, som er output
+
+`document.querySelector('output').innerHTML = output_verdi`
+
 Her kunne vi også bruk andre elementer som kan holde på text som en div, og enten hente den slik som vi gjorde med input felted og getElementById eller querySelector etter div eller klasse.
 
-Nå når alle disse tingene er satt opp har man en fungerende kalkultor
+<article class="oppgave">
+    <h4 id="oppgave-10">Oppgave 10</h4>
+    <p><em>Adder resultatet til HTML output elementet</em></p>
+    <ul>
+      <li>I slutten av funksjone så legger du en linje for å addere resultat strenger til HTML elementet output</li>
+      <li>document.querySelector('output').innerHTML = output_verdi</li>
+    </ul>
+</article>
 
-Eller er den helt uten feil
+ ---
 
-Hva skjer om kan ikke gir den et tall
-Eller hva skjer om man ikke gir den noe input
-Hva skjer om du prøver å konverter 100F til C
+Nå som alle disse tingene er satt opp har man en fungerende kalkultor
 
-Fikses med å sette type=number
-Fikses med å sette type=number
-Fikses med å sette resultat = resultat.toFixed(2)
+... eller er den helt uten feil??
 
+---
+<article class="oppgave">
+    <h4 id="oppgave-11">Oppgave 11</h4>
+    <p><em>Test at ting fungerer som den skal</em></p>
+    <ul>
+      <li>Test hva som skjer om man gir tekst som input og ikke et tall</li>
+      <li>Test hva som skjer om input feltet er tomt</li>
+      <li>Test hva som skjer om du prøver å konverter 100F til C</li>
+    </ul>
+</article>
+
+ ---
+
+
+---
+<article class="oppgave">
+    <h4 id="oppgave-12">Oppgave 12</h4>
+    <p><em>La oss fikse litt bugs: Input check</em></p>
+    <ul>
+      <li>De to første tingene vi testet over faller under samme kategori.</li>
+      <li>Vi kan endre input elementet til i forvente "number" med å erstatte "string" til number</li>
+      <li>Test hva som skjer om man nå gir ikke tall til input feltet da får vi en tom streng</li>
+      <li>Nå trenger vi bare å håndetere en tom streng</li>
+      <li>En tom streng har egenskapen at den er bolske verdien false</li>
+      <li>Vi kan dermed sjekke om input_verdi er true eller false</li>
+      <li>Om den er false kan vi droppe å regne ut noe, og bare oppdatere output elementer vårt med en feilmelding</li>
+    </ul>
+</article>
+
+ ---
+<article class="oppgave">
+    <h4 id="oppgave-13">Oppgave 13</h4>
+    <p><em>La oss fikse litt bugs: Desimaltall formatering</em></p>
+    <ul>
+      <li>Man kan bruke funksjonen toFixed(n) til å bestemme at et tall bare skal ha max n desimaler</li>
+      <li>Etter vi har regnet ut den nye temperaturen, endre variabelen slik at den bare har 2 desimaler</li>
+    </ul>
+</article>
+
+ ---
 
 
 
@@ -168,39 +298,6 @@ Fikses med å sette resultat = resultat.toFixed(2)
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
-```js
-function convert_temperature(t) {
-
-  var output, given, result, opposite;
-  given = document.getElementById('temp').value;
-
-
-  if (t === "C") {
-    result = 1.8 * (given) + 32;
-    opposite = "F";
-  } else {
-    result = (given - 32) / 1.8;
-    opposite = "C";
-  }
-
-
-  result = result.toFixed(2);
-
-
-
-  if (given) {
-    output = given + " \u00b0" + t + " is equal to " + result + " \u00b0" + opposite;
-  } else {
-    output = "Error: Input must be a valid number";
-  }
-
-
-  document.querySelector('output').innerHTML = output;
-}
-document.getElementById('ctof').addEventListener('click', function(){convert_temperature('C');})
-document.getElementById('ftoc').addEventListener('click', function(){convert_temperature('F');})
-
-```
 
 ### Del 3 - Todo list
 
