@@ -43,8 +43,9 @@ Me går nærmare inn på javascript seinare.
 ### Del 1 - Javascript grunnlegende konspemter
 
 #### Variabler
+Variabler er som bokser der vi kan lagre informasjon vi ønsker å bruke senere. Tenk på dem som navngitte beholdere som kan inneholde tall, tekst eller andre typer data.
 ```js
-// teststrenger
+// tekststrenger
 var rund_ting_1 = "klokke"
 var rund_ting_2 = "cd"
 
@@ -64,6 +65,8 @@ var har_kanter  = false
 ```
 
 #### if så else, og boolske verdier
+Boolske verdier er enkle data som bare kan være enten true (sann) eller false (usann).
+If-else-setninger lar oss ta beslutninger i koden vår. De sjekker om en betingelse (en påstand) er sann eller usann, og utfører handlinger basert på dette.
 ```js
 var klokkeslett = 15
 
@@ -83,14 +86,26 @@ if (klokkeslett < 10){
 }
 ```
 
+#### funksjoner
+Funksjoner er som oppskrifter. De forteller datamaskinen hva den skal gjøre, steg for steg. Vi kan lage en funksjon for å utføre en bestemt oppgave, og deretter bruke den hvor som helst i koden vår.
+```js
+
+function omkrets(radius) {
+  var pi = 3.1415
+  return pi * radius * 2
+}
+
+omkrets(5)
+```
+
 ---
 
 <article class="oppgave">
     <h4 id="oppgave-1">Oppgave 1</h4>
     <p><em>Sette variabler og printe dem i konsollen</em></p>
     <ul>
-      <li>Vi skal starte med å finne konsollen, den kan du åpne med å trykke på `Console` knappen nede i venstre hjørne på codePen</li>
-      <li>I js vinduet skal vi sette noen variabler</li>
+      <li>Vi skal starte med å finne konsollen, den kan du åpne med å trykke på `Console` knappen nede i venstre hjørne i codePen</li>
+      <li>I js vinduet skal vi sette noen variabler: Navn og Alder</li>
       <li>Navn kan være en tekst tekststreng: "Harald"</li>
       <li>Alder kan være et tall: 87</li>
       <li>For å se hvilken verdi som ligger i en variabel kan vi bruke console.log(variabelNavn)</li>
