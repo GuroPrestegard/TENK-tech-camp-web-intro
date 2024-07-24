@@ -100,6 +100,15 @@ omkrets(5)
 
 ---
 
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="mdZPyvq" data-pen-title="Temperatur kalkulator" data-editable="true" data-user="Elinborg" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/Elinborg/pen/mdZPyvq">
+  Temperatur kalkulator</a> by Karina Elinborg (<a href="https://codepen.io/Elinborg">@Elinborg</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+---
+
 <article class="oppgave">
     <h4 id="oppgave-1">Oppgave 1</h4>
     <p><em>Sette variabler og printe dem i konsollen</em></p>
@@ -335,27 +344,15 @@ Nå som alle disse tingene er satt opp har man en fungerende kalkulator
  ---
 
 
-
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jOjEemm" data-pen-title="Temperature" data-editable="true" data-user="Elinborg" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/Elinborg/pen/jOjEemm">
-  Temperature</a> by Karina Elinborg (<a href="https://codepen.io/Elinborg">@Elinborg</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-
-
 ### Del 3 - Todo list
 
 Her har vi en litt mer avansert applikasjon enn den over. I tillegg til alle de nye konseptene vi lærte over skal vi her også lage ny html elementer og legge de til med javascript.
-Vi ser på lister og for-løkker, og knapper som kaller på flere funksjoner.
+Her er det også none nye konsepter som lister og for-løkker.
 
 
-<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="dyBPQwW" data-pen-title="To Do List" data-editable="true" data-user="Elinborg" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/Elinborg/pen/dyBPQwW">
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="VwJYVbK" data-pen-title="To Do List" data-editable="true" data-user="Elinborg" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/Elinborg/pen/VwJYVbK">
   To Do List</a> by Karina Elinborg (<a href="https://codepen.io/Elinborg">@Elinborg</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-[Gå til neste del: Deploy](/TENK-tech-camp-web-intro/posts/06_deploy)
