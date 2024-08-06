@@ -26,6 +26,8 @@ tags: [ "nivå2" ]
 deler den opp med avsnitt for å markere at det er forskjell i innhaldet i teksten, gjer ein det same i HTML. Dette gjer
 ein med <font color="#EA580C">tags</font>.
 
+### Tekst
+
 Dette er ein <font color="#EA580C">paragraph</font>-tag. Paragraph betyr avsnitt.
 
 Kvar tag må opnast og sluttast. Til dømes, ein paragraph tag `p` blir opna med `<p>`
@@ -56,11 +58,12 @@ kunne skjøne kva sida innehalder og korleis det skal vises.
       <li>Det er veldig viktig at man er eksakt, og skriver taggene nøyaktig slik de er definert. Husk også å lukke de!</li>
       <li><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>-taggen er en generisk tag for å samle innhold, og kan være nyttig for å dele opp innholdet på en fornuftig måte.</li>
     </ul>
+    <p><em>Hvis du slitter med kva du må skrive, kan du for eksempel skrive litt om feriedestinasjoner eller forskjellige dyr.</em></p>
 </article>
 
 ---
 
-## Lister
+### Lister
 
 Det fins 142 element ein kan legga til nettsida sin, og nokon har meir avansert funksjonalitet enn å berre endre på
 korleis teksten ser ut. Disse elementene består gjerne av flere forskjellige typer elementer, som man bruker samtidig.
@@ -68,10 +71,10 @@ Vi kan legge til lister, med en kombinasjon av `<ul>`- og `<li>`-taggene:
 
 ```html
 <ul>
-  <li>Gandalf</li>
-  <li>Frodo</li>
-  <li>Aragorn</li>
-  <li>Gimli</li>
+  <li>Hund</li>
+  <li>Sjøsnegle</li>
+  <li>Sommerfugl</li>
+  <li>Neshorn</li>
 </ul>
 ```
 
@@ -79,15 +82,14 @@ Vi kan også ha nummererte lister, dersom rekkefølgen er viktig, med `<ol>`- og
 
 ```html
 <ol>
-  <li>Liverpool</li>
-  <li>Manchester City</li>
-  <li>Arsenal</li>
-  <li>Aston Villa</li>
+  <li>Bergen</li>
+  <li>Gran Canaria</li>
+  <li>Lofoten</li>
+  <li>London</li>
 </ol>
 ```
 
-
-#### Tabeller 
+### Tabeller
 
 Tabeller er ofte nyttige for å "strukturere" og presentere innholdet, spesielt om man har data som kan representeres med rader og kolonner.
 
@@ -134,22 +136,25 @@ Et eksempel med litt innhold:
 <table border="1">
   <thead>
     <tr>
-      <th>Film</th>
-      <th>År</th>
-      <th>Regissør</th>
+      <th>Navn</th>
+      <th>Latinsk navn</th>
+      <th>Vekt (g)</th>
+      <th>Kroppstemperatur (°C)</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
-      <td>Star Wars</td>
-      <td>1977</td>
-      <td>George Lucas</td>
+      <td>Hund</td>
+      <td>Canis</td>
+      <td>1.500-100.000</td>
+      <td>39</td>
     </tr>
     <tr>
-      <td>Jurassic Park</td>
-      <td>1993</td>
-      <td>Steven Spielberg</td>
+      <td>Sommerfugl</td>
+      <td>Rhopalocera</td>
+      <td>0,04-0,3</td>
+      <td>20-50</td>
     </tr>
   </tbody>
 </table>
@@ -166,13 +171,13 @@ vi legger den til her for å gjøre tabellen vår litt mer synlig.
     <h4 id="oppgave-2">Oppgave 2</h4>
     <p><em>Legg til en enkel tabell på nettsiden din</em></p>
     <ul>
-      <li>Vær obs på strukturen! Det er et samspill mellom <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;thead</code>, <code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code>, og <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> - så det kan lett gå i surr, og det er viktig at man lukker de riktig.</li>
+      <li>Vær obs på strukturen! Det er et samspill mellom <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;thead&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code>, og <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> - så det kan lett gå i surr, og det er viktig at man lukker de riktig.</li>
     </ul>
 </article>
 
 ---
 
-#### Input 
+### Input 
 
 Nettsider lar oss gjerne gjøre litt mer enn å bare se på innhold, for eksempel kan man legge til en kommentar, eller logge inn.
 Da finnes det litt mer avanserte elementer vi kan benytte for å la brukeren gjøre slike handlinger.
@@ -248,12 +253,12 @@ Vi kan bruke `type="checkbox"` for å lage en checkbox der man kan velge ja / ne
 
 ```html
 <div>
-  <h3>Velg topping til pizza:</h3>
-  <input type="checkbox" /> Ost <br />
-  <input type="checkbox" /> Tomatsaus <br />
-  <input type="checkbox" /> Pepperoni <br />
-  <input type="checkbox" /> Løk <br />
-  <input type="checkbox" /> Ananas <br />
+  <h3>velg det viktigste for feriedestinasjonen din:</h3>
+  <input type="checkbox" /> Strand <br />
+  <input type="checkbox" /> Snø <br /> 
+  <input type="checkbox" /> Luksus hotel <br />
+  <input type="checkbox" /> Billig mat <br />
+  <input type="checkbox" /> Barnevennlig <br />
 </div>
 ```
 
@@ -261,7 +266,7 @@ Vi kan bruke `type="number"` for å gjøre det om til et tekstfelt man bare kan 
 
 ```html
 <div>
-  <label>Antall pizzaer å bestille:</label> <br />
+  <label>Maks timer fra Bergen:</label> <br />
   <input type="number" />
 </div>
 ```
