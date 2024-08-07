@@ -48,8 +48,6 @@ I denne workshopen så anbefaler vi å bruke disse verktøyene som finnes på ne
 ### Nettleser-baserte verktøy (vi anbefaler dette til denne workshopen):
 
 - [CodePen](https://codepen.io/pen/)
-- [CodeSandbox](https://codesandbox.io/)
-- [StackBlitz](https://stackblitz.com/edit/web-platform?file=index.html)
 
 ## Andre verktøy:
 

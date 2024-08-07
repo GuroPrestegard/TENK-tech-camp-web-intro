@@ -54,7 +54,7 @@ kunne skjøne kva sida innehalder og korleis det skal vises.
     <h4 id="oppgave-1">Oppgave 1</h4>
     <p><em>Lag en enkel side, med de html-elementene over.</em></p>
     <ul>
-      <li>Hva skjer når du endrer på måten ting er nøstet på?</li>
+      <li>Hva skjer når du endrer på måten ting er organisert på? (dvs flytte på elementene)</li>
       <li>Det er veldig viktig at man er eksakt, og skriver taggene nøyaktig slik de er definert. Husk også å lukke de!</li>
       <li><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>-taggen er en generisk tag for å samle innhold, og kan være nyttig for å dele opp innholdet på en fornuftig måte.</li>
     </ul>

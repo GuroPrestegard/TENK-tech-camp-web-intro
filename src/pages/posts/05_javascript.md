@@ -40,7 +40,7 @@ Me går nærmare inn på javascript seinare.
 
 
 
-### Del 1 - Javascript grunnlegende konspemter
+### Del 1 - Javascript grunnlegende konsepter 
 
 #### Variabler
 Variabler er som bokser der vi kan lagre informasjon vi ønsker å bruke senere. Tenk på dem som navngitte beholdere som kan inneholde tall, tekst eller andre typer data.

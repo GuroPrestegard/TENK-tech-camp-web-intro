@@ -103,9 +103,6 @@ NB! navn på klasser og Id-er kan ikkje ha mellomrom i seg. Bruk ``-`` i staden 
 <article class="oppgave">
     <h4 id="oppgave-1.5">Oppgave 1.5</h4>
     <p><em>Leik deg litt med dei forskjellige elementa i kodeeksempelet over</em></p>
-    <ul>
-      <li></li>
-    </ul>
 </article>
 
 ---
@@ -114,7 +111,7 @@ NB! navn på klasser og Id-er kan ikkje ha mellomrom i seg. Bruk ``-`` i staden 
 Her ser du eit bilete av ein hund, som eigentleg er firkanta. Men, ved hjelp av CSS har det blitt rundt. Dette fungerar 
 best med bileter som er heilt kvadratiske. 
 <div>
-<img class="rounded"  src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
+<img class="rounded" src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
 </div>
 
 ```html
@@ -263,7 +260,7 @@ du kan gi til justify-content og align-items.
 
 <article class="oppgave">
     <h4 id="oppgave-9">Oppgave 9</h4>
-    <p><em>Prøv å gi ein layout til ei nettside med overskrift, bilder og forskjellige element. </em></p>
+    <p><em>Lag ei nettside med overskrift, bilder og forskjellige element. Prøv å plasser elementa på forskjellige måtar på sida ved å bruke teknikkane du har lært.  </em></p>
 </article>
 
 
