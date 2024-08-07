@@ -58,7 +58,7 @@ kunne skjøne kva sida innehalder og korleis det skal vises.
       <li>Det er veldig viktig at man er eksakt, og skriver taggene nøyaktig slik de er definert. Husk også å lukke de!</li>
       <li><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>-taggen er en generisk tag for å samle innhold, og kan være nyttig for å dele opp innholdet på en fornuftig måte.</li>
     </ul>
-    <p><em>Hvis du slitter med kva du må skrive, kan du for eksempel skrive litt om feriedestinasjoner eller forskjellige dyr.</em></p>
+    <p><em>Hvis du sliter med kva du skal skrive, kan du for eksempel skrive litt om feriedestinasjoner eller forskjellige dyr.</em></p>
 </article>
 
 ---
@@ -266,7 +266,7 @@ Vi kan bruke `type="number"` for å gjøre det om til et tekstfelt man bare kan 
 
 ```html
 <div>
-  <label>Maks timer fra Bergen:</label> <br />
+  <label>Maks antall timer fra Bergen:</label> <br />
   <input type="number" />
 </div>
 ```
