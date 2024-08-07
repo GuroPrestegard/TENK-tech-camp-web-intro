@@ -19,7 +19,7 @@ Ei nettside er alt frå <font color="#EA580C">It's learning</font> der du sjekke
 
 Det finst utruleg mange måtar å lage nettsider på, med mange program som gjer det enklare for utviklarane å bygge dei.
 
-Men, i botnen er alle nettsider ei samling med HTML, og gjerne CSS og javascript-filer.
+Men, i botnen er alle nettsider ei samling med HTML, og gjerne CSS og JavaScript-filer.
 
 ## Hvordan komme i gang
 
