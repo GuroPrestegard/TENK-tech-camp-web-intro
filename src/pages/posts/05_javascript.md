@@ -351,3 +351,5 @@ Her er det også none nye konsepter som lister og for-løkker.
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+[Gå til neste del: Deploy](/TENK-tech-camp-web-intro/posts/06_deploy)
