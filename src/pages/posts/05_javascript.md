@@ -31,14 +31,9 @@ tags: ["nivå4"]
 Javascript er det som får nettsida til å oppføre seg på ein spesiell måte. Når du trykker på ein knapp, er det javascript
 som bestemmer kva som skal skje.
 
-Om du for eksempel har fylt ut eit skjema, for å opprette ein konto på ei nettside, og trykker "send inn", kan utviklaren,
-ved hjelp av javascript, samle inn all dataen du har skrive, sjekke at den ser rett ut (at e-post adresser har ein @ i seg,
-at telefonnummer kun er tall), og sende den til backenden slik at dataen kan lagrast og brukaren din vert oppretta.
-
-Me går nærmare inn på javascript seinare. 
-
-
-
+Ta eksempelet for eksempel at du har fylt ut eit skjema for å opprette ein konto på ei nettside. Når du trykker "send inn", kan utviklaren
+ved hjelp av javascript samle inn all dataen du har skrive. Utviklaren kan òg sjekke at teksten er rett (at e-post adresser har ein @ i seg,
+at telefonnummer kun er tall), og deretter sende den til databasen slik at dataen kan lagrast og brukaren din vert oppretta.
 
 ### Del 1 - Javascript grunnlegende konsepter 
 
