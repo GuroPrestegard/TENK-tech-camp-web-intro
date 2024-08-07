@@ -273,8 +273,8 @@ Vi kan nå lage en tekststreng som vi skal la være vår <em>output_verdi</em>
     <h4 id="oppgave-9">Oppgave 9</h4>
     <p><em>Formater resultatet i en resultat streng og lagre denne verdien i en variabel</em></p>
     <ul>
-      <li>output_verdi = input_verdi + " \u00b0" + t + " er det samme som " + resultat + " \u00b0" + motsatt</li>
-      <li>\u00b0 er ascii koden for grade symbolet, man kan også kopiere denne verdien °</li>
+      <li>output_verdi = input_verdi + " \u00b0" + enhet + " er det samme som " + resultat + " \u00b0" + motsatt</li>
+      <li>\u00b0 er ascii koden for grad symbolet, man kan også kopiere denne verdien °</li>
       <li>Print output_verdi i konsollen med console.log() for å sjekket at det ser riktig ut</li>
     </ul>
 </article>
@@ -285,11 +285,11 @@ Vi kan nå lage en tekststreng som vi skal la være vår <em>output_verdi</em>
 Nå har vi lyst til å legge til denne output-verdien inn i htmlen slik at den dukker opp på siden.
 I htmlen kan man se at vi har et element som heter output, dette er hva vi skal bruke
 
-Her skal vi bruke `querySelector` som er en annen måte å hente ut et html element. Den er litt mer generell enn `getElementById`. Denne kan vi spørre etter type html element og den gir oss den første instansen av dette elementet. Man kan også hente ut elenter passert på andre kriterier men her bruker vi element type, som er output
+Her skal vi bruke `querySelector` som er en annen måte å hente ut et html element. Den er litt mer generell enn `getElementById`. Denne kan vi spørre etter type html element og den gir oss den første instansen av dette elementet. Man kan også hente ut elementer basert på andre kriterier men her bruker vi element type, som er output
 
 `document.querySelector('output').innerHTML = output_verdi`
 
-Her kunne vi også bruk andre elementer som kan holde på text som en div, og enten hente den slik som vi gjorde med input felted og getElementById eller querySelector etter div eller klasse.
+Her kan vi også bruk andre elementer som kan holde på text som en div, og enten hente den slik som vi gjorde med input felted og getElementById eller querySelector etter div eller klasse.
 
 <article class="oppgave">
     <h4 id="oppgave-10">Oppgave 10</h4>
