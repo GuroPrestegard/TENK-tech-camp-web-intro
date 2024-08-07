@@ -71,10 +71,34 @@ img {
 f.eks 
 ```html
 <section>
-  <h1>Mi flotte nettside</h1>
-  <p>Litt tekst</p>
-  <img  src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lucy_the_Dog_at_The_Green%2C_Town_Square_Las_Vegas.jpg/1600px-Lucy_the_Dog_at_The_Green%2C_Town_Square_Las_Vegas.jpg?20200314225253" alt="golden retriver" width="350" height="350"/> 
-
+	<div id="heading">
+		<p>🌸</p>
+		<h1>Mi flotte nettside</h1>
+		<p>🌸</p>
+	</div>
+	<p>Litt tekst</p>
+	<div id="picture-container">
+		<img  src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lucy_the_Dog_at_The_Green%2C_Town_Square_Las_Vegas.jpg/1600px-Lucy_the_Dog_at_The_Green%2C_Town_Square_Las_Vegas.jpg?20200314225253" alt="golden retriver" width="350" height="350"/>
+	</div>
 </section>
+```
+
+```css
+section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#picture-container {
+    display: flex;
+    gap: 2rem;
+}
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 ```
