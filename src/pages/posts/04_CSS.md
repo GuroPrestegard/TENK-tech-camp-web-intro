@@ -263,7 +263,4 @@ du kan gi til justify-content og align-items.
     <p><em>Lag ei nettside med overskrift, bilder og forskjellige element. Prøv å plasser elementa på forskjellige måtar på sida ved å bruke teknikkane du har lært.  </em></p>
 </article>
 
-
-
-
-[Gå til neste del: JavaScript](/TENK-tech-camp-web-intro/posts/05_javascript)
+[Gå til neste del: Avansert HTML](/TENK-tech-camp-web-intro/posts/05_HTML_plus)
