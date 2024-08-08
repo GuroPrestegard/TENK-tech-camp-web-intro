@@ -34,7 +34,7 @@ Kvar tag må opnast og sluttast. Til dømes, ein paragraph tag `p` blir opna med
 og blir slutta med `</p>`. Teksten mellom dei to tags er ein del av avsnittet.
 
 ```html
-<p>Dette er eit avsnitt</p> 
+<p>Dette er eit avsnitt du kan bruke i oppgave 1</p> 
 ```
 
 Dette er ein <font color="#EA580C">header</font>-tag. Header betyr overskrift. h1 er veldig stor tekst, mens h2 er litt
@@ -42,7 +42,7 @@ mindre,
 og h3 blir litt mindre enn det att, og så vidare.
 
 ```html
-<h1>Dette er ei overskrift</h1>
+<h1>Dette er ei overskrift du kan bruke i oppgave 1</h1>
 <h2>Dette er ei underoverskrift</h2> 
 ```
 
@@ -54,6 +54,7 @@ kunne skjøne kva sida innehalder og korleis det skal vises.
     <h4 id="oppgave-1">Oppgave 1</h4>
     <p><em>Lag en enkel side, med de html-elementene over.</em></p>
     <ul>
+      <li>Lim inn overskriftene og avsnittet over</li>
       <li>Hva skjer når du endrer på måten ting er organisert på? (dvs flytte på elementene)</li>
       <li>Det er veldig viktig at man er eksakt, og skriver taggene nøyaktig slik de er definert. Husk også å lukke de!</li>
       <li><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>-taggen er en generisk tag for å samle innhold, og kan være nyttig for å dele opp innholdet på en fornuftig måte.</li>
