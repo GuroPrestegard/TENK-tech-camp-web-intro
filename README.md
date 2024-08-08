@@ -223,3 +223,27 @@ _ °F er det samme som -17.77777777777778 °C
 abc °F er det samme som NaN °C
 100 °F er det samme som 37.77777777777778 °C
 ```
+
+### Oppgave 12
+```js
+//HTML
+<input type="string" id=input-field>
+->
+<input type="number" id=input-field>
+
+if (input_verdi) {
+	//calculate output_verdi
+}
+else {
+	output_verdi = "Feilmelding: Input må være et tall"
+}
+
+```
+
+### Oppagve 13
+
+```js
+// Før vi lager en formatert string så runder vi av resultat variabelen
+
+resultat = resultat.toFixed(2)
+```

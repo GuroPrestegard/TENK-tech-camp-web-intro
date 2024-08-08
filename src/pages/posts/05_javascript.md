@@ -25,6 +25,7 @@ tags: ["nivå4"]
 - [Oppgave 10](#oppgave-10)
 - [Oppgave 11](#oppgave-11)
 - [Oppgave 12](#oppgave-12)
+- [Oppgave 13](#oppgave-13)
 
 ## Kva er JavaScript?
 
@@ -326,9 +327,9 @@ Nå som alle disse tingene er satt opp har man en fungerende kalkulator
     <p><em>La oss fikse litt bugs: Input check</em></p>
     <ul>
       <li>De to første tingene vi testet over faller under samme kategori.</li>
-      <li>Vi kan endre input elementet til i forvente "number" med å erstatte "string" til number</li>
-      <li>Test hva som skjer om man nå gir ikke tall til input feltet da får vi en tom streng</li>
-      <li>Nå trenger vi bare å håndtere en tom streng</li>
+      <li>Vi kan endre html input elementet til i forvente tall med å erstatte <em>string</em> til <em>number</em></li>
+      <li>Test hva som skjer om man ikke gir et tall som input, da får vi en tom streng ""</li>
+      <li>Nå trenger vi bare å håndtere hva vi skal gjøre når input er en tom streng</li>
       <li>En tom streng har egenskapen at den er boolske verdien false</li>
       <li>Vi kan dermed sjekke om input_verdi er true eller false</li>
       <li>Om den er false kan vi droppe å regne ut noe, og bare oppdatere output elementer vårt med en feilmelding</li>
@@ -340,8 +341,9 @@ Nå som alle disse tingene er satt opp har man en fungerende kalkulator
     <h4 id="oppgave-13">Oppgave 13</h4>
     <p><em>La oss fikse litt bugs: Desimaltall formatering</em></p>
     <ul>
-      <li>Man kan bruke funksjonen toFixed(n) til å bestemme at et tall bare skal ha max n desimaler</li>
-      <li>Etter vi har regnet ut den nye temperaturen, endre variabelen slik at den bare har 2 desimaler</li>
+      <li>Man kan bruke funksjonen toFixed(n) til å bestemme at et tall bare skal ha maks n desimaler</li>
+      <li>Etter vi har regnet ut den nye temperaturen (<em>resultat</em>), endre variabelen slik at den bare har 2 desimaler</li>
+      <li>variabelNavn.toFixed(2)</li>
     </ul>
 </article>
 
