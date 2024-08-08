@@ -76,11 +76,11 @@ if (klokkeslett < 18){
 }
 
 
-// om det første utrykket er sant vil den printe God morgen.
-// om klokkeslettet er ikke er mindre enn 10 går den til neste steg
-// da sjekker den om klokkeslettet er mindre enn 18, om det er sant
-// så printer den God dag
-// men om det ikke er sant, går den ned til else og printer God Kveld
+// om det første utrykket er sant vil den printe "God morgen".
+// om klokkeslettet er ikke er mindre enn 10 går den til neste sjekk
+// her sjekker den om klokkeslettet er mindre enn 18,
+// om det er sant så printer den "God dag"
+// men om det ikke er sant, går den ned til else og printer "God kveld"
 if (klokkeslett < 10){
   console.log("God morgen")
 } else if (klokkeslett < 18) {
