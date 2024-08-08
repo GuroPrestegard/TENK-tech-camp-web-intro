@@ -196,17 +196,17 @@ Vi ønsker først at noe skal skje når vi trykker på knappene. Her skal vi bru
 Vi har to knapper og vi ønsker at de skal ha forskjellig oppførsel.
 La oss oppdatere funksjonen slik at den har et parameter: enhet.
 I hver av knappene legg til argumentet "C" om verdien vi tar i mot er celsius og F om verdien vi tar inn er Farenheit.
-Siden funksjonen nå tar inn et parameter må vi endre litt på <em>addEventListener(function(){myFunction(parameter1, parameter2)})</em>
+Siden funksjonen nå tar inn et argument må vi endre litt på <em>addEventListener('click', function(){myFunction(argument1, argument2)})</em>
 
 <article class="oppgave">
     <h4 id="oppgave-5">Oppgave 5</h4>
-    <p><em>Oppdater funksjon til å ta inn argument, oppdater eventListener</em></p>
+    <p><em>Oppdater funksjonen til å ta inn et argument, oppdater eventListener</em></p>
     <ul>
       <li>La funksjonen ha et parameter som er enhet</li>
       <li>Vi må også oppdatere addEventListener() som vi har på knappene</li>
-      <li>addEventListener(function(){myFunction(parameter1)})</li>
-      <li>Legg til argumentet "C" og "F"</li>
-      <li>Oppdater console.log / alert meldingen og sjekk at knappene har forskjellig oppførsel med å også printe hva de får som argument.</li>
+      <li>Feks. addEventListener(function(){'click', konverter_temperatur(argument1)})</li>
+      <li>Bytt ut argument1 med argumentet "C" og "F" på hver sin knapp</li>
+      <li>Oppdater console.log og sjekk at knappene har forskjellig oppførsel med å printe hva de får som argument.</li>
     </ul>
 </article>
 
@@ -230,14 +230,13 @@ Dette gir oss document.getElementById('input-field').value
  ---
 
 
-
 Neste steg er å hente ut denne informasjonen i scriptet vårt.
 Inne i funksjonen bruk variabelen input_verdi til å lagre denne verdien
 Om du ønsker å se at riktig verdi ble lagret når vi kjører funksjonen kan du console logge variabelen.
 
 <article class="oppgave">
     <h4 id="oppgave-7">Oppgave 7</h4>
-    <p><em>Oppdater funksjonen til å hente input felt verdien</em></p>
+    <p><em>Oppdater funksjonen til å hente inputfelt verdien</em></p>
     <ul>
       <li>Bruk input_verdi variabelen til å lagre verdien som vi henter fra inputfeltet</li>
       <li>Sjekk med console.log at vi får tak i verdien når vi kaller på funksjonen med å trykke på en av knappene</li>
@@ -250,7 +249,7 @@ Nå har vi all informasjonen vi trenger. Vi vet om vi skal gjøre om til celsius
 
 <article class="oppgave">
     <h4 id="oppgave-8">Oppgave 8</h4>
-    <p><em>La funksjonen sjekke hvilken knapp vi trykket på / gjør 2 forskjellige ting basert på hva argument funksjonen får</em></p>
+    <p><em>La funksjonen sjekke hvilken knapp vi trykket på og gjør forskjellige ting basert på hva argument funksjonen får</em></p>
     <ul>
       <li>Bruk en if/else for å sjekke om argumentet vi fikk til funksjonen er C eller F</li>
       <li>Brukt input verdien til å regne ut en result verdi som vi lagrer i variabelen <em>resultat</em></li>
