@@ -3,7 +3,7 @@ layout: ../../layouts/post.astro
 title: "JavaScript"
 description: "JavaScript"
 author: "gurop"
-excerpt: JavaScript 
+excerpt: "Javascript er det som får nettsida til å oppføre seg på ein spesiell måte. Det er hva som lar en bruker interagere med siden." 
 image:
   src:
   alt:
