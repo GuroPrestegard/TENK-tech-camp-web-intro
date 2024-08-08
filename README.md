@@ -102,3 +102,148 @@ section {
     width: 100%;
 }
 ```
+
+## JavaScript fasit
+
+### Oppgave 1
+```js
+var alder = 87
+var navn = "Harald"
+console.log(alder)
+console.log(navn)
+
+var navn = "Karina"
+var alder = 87-41
+console.log(alder)
+console.log(navn)
+```
+
+
+### Oppgave 2
+
+```js
+
+function hello() {
+	console.log("Hello world!")
+}
+
+
+function hello(navn) {
+	console.log("Hei, " + navn)
+}
+```
+
+
+### Oppgave 3
+```js
+function hello(navn, alder) {
+	if (alder > 26) {
+		console.log(navn, " du er eldre en meg")
+	}
+	else {
+		console.log(navn, "er bare ", alder, " år gammel")
+	}
+}
+
+```
+
+
+### Oppgave 4
+
+```js
+var cTof = document.getElementById("ctof")
+var fToc = document.getElementById("ftoc")
+cTof.addEventListener("click", konverter_temperatur())
+fToc.addEventListener("click", konverter_temperatur())
+
+// i funksjonen
+console.log("En knapp ble trykket på")
+```
+
+
+### Oppgave 5
+```js
+cTof.addEventListener("click",function() {konverter_temperatur("C")})
+fToc.addEventListener("click", function()
+{konverter_temperatur("F")})
+
+// I funksjonen
+if enhet == "C" {
+	console.log("Konverter fra C til F")
+}
+else {
+	console.log("Konverterer fra F to C")
+}
+```
+
+### Oppgave 6
+```js
+document.getElementById('input-field')
+```
+
+
+### Oppgave 7
+
+```js
+input_verdi = document.getElementById('input-field')
+
+console.log("Inputfeltet har verdien ", input_verdi)
+```
+
+
+### Oppgave 8
+```js
+if enhet == "C" {
+	resultat = 1.8 * input_verdi + 32
+	motsatt = "F"
+}
+else {
+	result = (enhet - 32) / 1.8
+	mosatt = "C"
+}
+```
+
+
+### Oppgave 9
+```js
+output_verdi = input_verdi + " \u00b0" + enhet + " er det samme som " + resultat + " \u00b0" + motsatt
+```
+
+
+### Oppgave 10
+```js
+document.querySelector('output').innerHTML = output_verdi
+```
+
+### Oppgave 11
+
+```js
+_ °C er det samme som 32 °F
+_ °F er det samme som -17.77777777777778 °C
+abc °F er det samme som NaN °C
+100 °F er det samme som 37.77777777777778 °C
+```
+
+### Oppgave 12
+```js
+//HTML
+<input type="string" id=input-field>
+->
+<input type="number" id=input-field>
+
+if (input_verdi) {
+	//calculate output_verdi
+}
+else {
+	output_verdi = "Feilmelding: Input må være et tall"
+}
+
+```
+
+### Oppagve 13
+
+```js
+// Før vi lager en formatert string så runder vi av resultat variabelen
+
+resultat = resultat.toFixed(2)
+```
