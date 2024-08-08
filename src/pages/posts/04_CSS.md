@@ -37,16 +37,23 @@ p {
 }
 ```
 
-I eksempelet over seier me at alle tags av typen p skal ha fargen rosa.
+I eksempelet over seier me at alle tags av typen p skal ha fargen rosa. 
+p (paragraf, som me såg i HTML-biten) er typen element du vil treffe, og så er alt du skriv inni krøllparantesene {} den stylingen elementet får.
+For å skrive krøllparanteser på mac, brukar du option+shift+8 og option+shift+9.
+For å skrive krøllparanteser på windows, brukar du altgr+7 og altgr+0.
 
 Man kan sette styling på tags, slik som over, men og på klasser og id-er man har gitt til tags.
 
 #### Klasser
 Klasser settes på html-tags ved å skrive ```class="et-superbra-klassenavn"``` som vist over. Her kan du f.eks lagre styling som 
 du har lyst til å bruke på fleire elementer. Du skriver css som treffer klasser-er med ``.``, f.eks ``.et-superbra-klassenavn``. 
+
+Html:
 ```html
 <p class="et-superbra-klassenavn">Dette er eit avsnitt</p>
 ```
+
+Css:
 ```css
 .et-superbra-klassenavn {
     color: orange
@@ -56,9 +63,13 @@ du har lyst til å bruke på fleire elementer. Du skriver css som treffer klasse
 #### ID-er
 Id-er settes på html-tags ved å skrive ``id="et-superbra-id-navn"``. Ein ID høyrer kun til **eitt** element, og kan brukes til 
 å style det spesifikke elementet. Du skriver css som treffer Id-er med ``#``, f.eks ``#et-superbra-id-navn``.
+
+html:
 ```html
 <p id="et-superbra-id-navn">Dette er eit avsnitt</p>
 ```
+
+css: 
 ```css
 #et-superbra-id-navn {
    font-weight: bold 
@@ -114,6 +125,7 @@ best med bileter som er heilt kvadratiske.
 <img class="rounded" src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
 </div>
 
+html:
 ```html
 <img src="https://vetericyn.com/Vetericyn/wp-content/uploads/2024/04/Benefits-of-Chondroitin-for-Dogs-350x350.jpg" alt="ein hund" width="350" height="350">
 ```
@@ -163,6 +175,7 @@ Her har me tatt bildet frå i stad, og gjort det opp-ned.
 Her har me tatt bildet frå i stad, og skrive CSS som gjer at det snurra rundt når du held musa over det. For å style når
 nokon held musa over noko, brukar me :hover. For eksempel om nokon held musa over ein p-tag, kan me bruke
 
+Css:
 ```css
 p:hover {
 color: blue;
@@ -183,6 +196,16 @@ color: blue;
     </ul>
 </article>
 
+---
+
+Du kan fortsette til neste delen, eller jobbe med ekstra oppgavene under hvis du
+liker å jobbe mer med CSS.
+
+[Gå til neste del: Avansert HTML](/TENK-tech-camp-web-intro/posts/05_HTML_plus)
+
+---
+
+## Ekstra oppgaver
 
 ### Plassering & FlexBox
 
@@ -195,6 +218,8 @@ Konseptet med Flexbox er at du har ein container (behaldar), og inni den har du 
 er ansvarleg for å plassere sine children/underelementer, men children har også mulighet til å plassere seg sjølv. 
 
 For å markere eit html-element med at du vil bruke Flexbox, skriv me CSS-en slik: 
+
+CSS:
 ```css
 .container {
     display: flex;
@@ -212,6 +237,7 @@ Alle elementa har fått ein klasse, i tillegg har kvart av underelementa fått s
 
 ---
 
+CSS:
 ```css title="Forskjellige verdiar man kan bruke på flexbox-properties"
 .container {
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right;
@@ -263,7 +289,4 @@ du kan gi til justify-content og align-items.
     <p><em>Lag ei nettside med overskrift, bilder og forskjellige element. Prøv å plasser elementa på forskjellige måtar på sida ved å bruke teknikkane du har lært.  </em></p>
 </article>
 
-
-
-
-[Gå til neste del: JavaScript](/TENK-tech-camp-web-intro/posts/05_javascript)
+[Gå til neste del: Avansert HTML](/TENK-tech-camp-web-intro/posts/05_HTML_plus)

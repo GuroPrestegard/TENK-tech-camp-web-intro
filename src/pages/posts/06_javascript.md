@@ -362,4 +362,4 @@ Her er det også noen nye konsepter som lister og for-løkker.
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-[Gå til neste del: Deploy](/TENK-tech-camp-web-intro/posts/06_deploy)
+[Gå til neste del: Deploy](/TENK-tech-camp-web-intro/posts/07_deploy)
